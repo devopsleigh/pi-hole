@@ -19,7 +19,7 @@ Runs Docker containers for Pi-Hole.
 
 2. Change secrets appropriately
 
-   ```sh
+   ```yaml
    TZ=Country/City
    ServerIP=ip.ad.dr.ess
    WEBPASSWORD=somethingsecure
