@@ -1,0 +1,27 @@
+---
+version: '2'
+services:
+  homeassistant:
+    container_name: pi-hole
+    image: pihole/pihole
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "67:67/udp"
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /sharedfolders/appdata/pihole:/etc/pihole
+      - /sharedfolders/appdata/pihole/dnsmasq:/etc/dnsmasq.d/
+    environment:
+      - TZ=${TZ}
+      - ServerIP=${IP_ADDRESS}
+      - WEBPASSWORD=${WEBPASSWORD}
+    restart: unless-stopped
+    networks:
+      local:
+        ipv4_address: ${IP_ADDRESS}
+networks:
+  local:
+    external:
+      name: local
