@@ -12,10 +12,10 @@ Runs Docker containers for Pi-Hole.
 1. Download the repository
 
    ```sh
-    git clone https://github.com/devopsleigh/pi-hole.git
-    cd pi-hole
-    nano .env
-    ```
+   git clone https://github.com/devopsleigh/pi-hole.git
+   cd pi-hole
+   nano .env
+   ```
 
 2. Change secrets appropriately
 
