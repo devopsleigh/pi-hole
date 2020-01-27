@@ -15,7 +15,7 @@ services:
       - "443:443/tcp"
     environment:
       TZ:${TZ}
-      # WEBPASSWORD: 'set a secure password here or it will be random"
+      WEBPASSWORD:${WEBPASSWORD}
       ServerIP=${IP_ADDRESS}
     # Volumes store your data between container upgrades
     volumes:
