@@ -23,7 +23,7 @@ Runs Docker containers for Pi-Hole.
    PATH_PIHOLE=/path/to/share
    PATH_DNSMASQ=/path/to/share
    TZ=Country/City
-   ServerIP=ip.ad.dr.ess
+   IP_ADDRESS=ip.ad.dr.ess
    WEBPASSWORD=somethingsecure
    ```
 
