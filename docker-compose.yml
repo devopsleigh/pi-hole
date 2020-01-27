@@ -11,8 +11,8 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - /sharedfolders/appdata/pihole:/etc/pihole
-      - /sharedfolders/appdata/pihole/dnsmasq:/etc/dnsmasq.d/
+      - ${PATH_PIHOLE}:/etc/pihole
+      - ${PATH_DNSMASQ}:/etc/dnsmasq.d/
     environment:
       - TZ=${TZ}
       - ServerIP=${IP_ADDRESS}

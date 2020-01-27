@@ -1,4 +1,4 @@
-# NextCloud Installation
+# Pi-Hole Installation
 
 Runs Docker containers for Pi-Hole.
 
@@ -20,10 +20,11 @@ Runs Docker containers for Pi-Hole.
 2. Change secrets appropriately
 
    ```yaml
+   PATH_PIHOLE=/path/to/share
+   PATH_DNSMASQ=/path/to/share
    TZ=Country/City
    ServerIP=ip.ad.dr.ess
    WEBPASSWORD=somethingsecure
-
    ```
 
 3. Run the container
