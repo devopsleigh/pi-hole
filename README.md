@@ -12,23 +12,23 @@ Runs Docker containers for Pi-Hole.
 1. Download the repository
 
    ```sh
-    git clone https://github.com/devopsleigh/pi-hole.git
-    cd pi-hole
+    git clone https://github.com/devopsleigh/pihole.git
+    cd pihole
     nano .env
     ```
 
 2. Change secrets appropriately
 
+> Note: Pi-Hole web is inaccessible if the below paths are on a network share
+
    ```yaml
-   PATH_PIHOLE=/path/to/share
-   PATH_DNSMASQ=/path/to/share
-   TZ=Country/City
-   IP_ADDRESS=ip.ad.dr.ess
+   PATH_PIHOLE=/path/on/disk
+   PATH_DNSMASQ=/path/on/disk
    WEBPASSWORD=somethingsecure
    ```
 
 3. Run the container
 
    ```sh
-   sudo docker-compose up -d --force-recreate
+   docker-compose up -d --force-recreate
    ```
