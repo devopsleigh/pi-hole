@@ -18,7 +18,7 @@ Runs Docker containers for Pi-Hole.
 
 2. Change secrets appropriately
 
-> Note: Pi-Hole web is inaccessible if the below paths are on a network share
+  > Note: Pi-Hole web is inaccessible if the below paths are on a network share
 
    ```yaml
    PATH_PIHOLE=/path/on/disk
