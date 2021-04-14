@@ -14,7 +14,7 @@ services:
       - DNS2=1.1.1.1
       - WEBPASSWORD=${WEBPASSWORD}
     volumes:
-      - ${CONFIG}:/etc/pihole
-      - ${DNSMASQ}:/etc/dnsmasq.d
+      - ${PATH_PIHOLE}:/etc/pihole
+      - ${PATH_DNSMASQ}:/etc/dnsmasq.d
       - /etc/localtime:/etc/localtime:ro
     restart: unless-stopped
