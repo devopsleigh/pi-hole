@@ -18,13 +18,13 @@ Runs Docker containers for Pi-Hole.
 
 2. Change secrets appropriately
 
-  > Note: Pi-Hole web is inaccessible if the below paths are on a network share
-
    ```yaml
    PATH_PIHOLE=/path/on/disk
    PATH_DNSMASQ=/path/on/disk
    WEBPASSWORD=somethingsecure
    ```
+
+  > Note: Pi-Hole web is inaccessible if the below paths are on a network share
 
 3. Run the container
 
