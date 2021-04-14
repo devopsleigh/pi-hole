@@ -5,7 +5,6 @@ Runs Docker containers for Pi-Hole.
 ## Prerequisites
 
 - Git
-- Docker macvlan network named `local`
 
 ## Run with Docker Compose
 
